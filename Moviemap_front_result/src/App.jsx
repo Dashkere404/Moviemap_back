@@ -18,7 +18,7 @@ const LoadingFallback = () => (
     <div className="loading-spinner"></div>
   </div>
 );
-export const API_BASE_URL = import.meta.env.VITE_API_URL;
+export const API_BASE_URL = "http://localhost:8000";
 export const POSTER_BASE_URL = "https://image.tmdb.org/t/p/w500";
 const Background = React.memo(function Background() {
   const location = useLocation();
