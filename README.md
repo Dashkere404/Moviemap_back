@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/aa96cc72-6cb9-4e44-9b3c-f2076954c3d5)# Запуск программы
+# Запуск программы
 Для того, чтобы начать пользоваться сайтом на локальном компьютере, необходимо на Linux проделать следующие действия:
 1. Включить VPN
 2. git clone https://github.com/Dashkere404/Moviemap_back.git
