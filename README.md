@@ -5,8 +5,24 @@
 3. cd Moviemap_back
 4. chmod +x deploy.sh
 5. ./deploy.sh
-6. В другом терминале: npm run dev
-7. Переходите по ссылке, которая появляется в этом терминале
-8. По ссылке будет доступен сайт, по команде Fn+F12 доступны логи действий пользователя на сайте
+6. В другом терминале:
+7. cd Moviemap_front_result
+8. npm run dev
+9. Переходите по ссылке, которая появляется в этом терминале
+10. По ссылке будет доступен сайт, по команде Fn+F12 доступны логи действий пользователя на сайте
 ## Возможные проблемы:
 1. ![image](https://github.com/user-attachments/assets/d42628d5-1c52-492f-bb44-8cdf682da57a)
+## Решение:
+Напишите в терминале: 
+python3 -m venv venv
+source venv/bin/activate
+Этот скрипт создаст виртуальное окружение, позволяющее установить все зависимости
+2. ![image](https://github.com/user-attachments/assets/6663b2d3-f23b-4144-bddb-290d699b994e)
+## Решение:
+Напишите в терминале:
+sudo apt update
+sudo apt install -y nodejs npm
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+source ~/.bashrc 
+
+
