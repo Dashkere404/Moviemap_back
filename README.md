@@ -15,7 +15,7 @@
 ## Решение:
 Напишите в терминале: 
 1. python3 -m venv venv
-2. source venv/bin/activate
+2. source venv/bin/activate  
 Этот скрипт создаст виртуальное окружение, позволяющее установить все зависимости
 ## Возможная проблема:
 ![image](https://github.com/user-attachments/assets/6663b2d3-f23b-4144-bddb-290d699b994e)
