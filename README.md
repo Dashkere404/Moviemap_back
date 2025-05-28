@@ -26,7 +26,7 @@ sudo apt install -y nodejs npm
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 source ~/.bashrc 
 ## Возможная проблема:
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/ec6958df-73b1-491f-8d7a-3ced8d74d5b6)
 ## Решение:
 Напишите в терминале:
 npm install -g vite
