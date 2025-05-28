@@ -28,11 +28,11 @@ jobs:
           python-version: '3.x'
 
       - name: Install frontend dependencies
-        working-directory: Moviemap_back_result
+        working-directory: Moviemap_front_result
         run: npm install
 
       - name: Run frontend in dev mode
-        working-directory: Moviemap_front_result
+        working-directory: Moviemap_back_result
         run: |
           npm run dev &
           sleep 10  
