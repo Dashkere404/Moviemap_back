@@ -32,7 +32,7 @@ jobs:
         run: npm install
 
       - name: Run frontend in dev mode
-        working-directory: Moviemap_back_result
+        working-directory: Moviemap_front_result
         run: |
           npm run dev &
           sleep 10  
@@ -43,7 +43,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build backend Docker image
-        working-directory: backend
+        working-directory: Moviemap_back_result
         run: |
           docker build -t my-backend .
 
