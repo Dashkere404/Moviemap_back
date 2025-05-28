@@ -15,7 +15,7 @@
 ## Решение:
 Напишите в терминале: 
 1. python3 -m venv venv
-2. source venv/bin/activate
+2. source venv/bin/activate  
 Этот скрипт создаст виртуальное окружение, позволяющее установить все зависимости
 ## Возможная проблема:
 ![image](https://github.com/user-attachments/assets/6663b2d3-f23b-4144-bddb-290d699b994e)
@@ -28,9 +28,9 @@
 ## Возможная проблема:
 ![image](https://github.com/user-attachments/assets/ec6958df-73b1-491f-8d7a-3ced8d74d5b6)
 ## Решение:
-Напишите в терминале:
-npm install -g vite
-Если же не помогло, то напишите:
+Напишите в терминале:  
+npm install -g vite  
+Если же не помогло, то напишите:  
 npm install vite --save-dev
 
 
