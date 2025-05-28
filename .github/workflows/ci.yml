@@ -1,0 +1,54 @@
+name: Fullstack CI with Docker and Dev Frontend
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm install
+
+      - name: Run frontend in dev mode
+        working-directory: frontend
+        run: |
+          npm run dev &
+          sleep 10  
+          curl http://localhost:5173 
+
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build backend Docker image
+        working-directory: backend
+        run: |
+          docker build -t my-backend .
+
+      - name: Run backend container
+        run: |
+          docker run -d -p 8000:8000 my-backend
+          sleep 5
+          curl http://localhost:8000/|| echo "API endpoint not responding yet"
